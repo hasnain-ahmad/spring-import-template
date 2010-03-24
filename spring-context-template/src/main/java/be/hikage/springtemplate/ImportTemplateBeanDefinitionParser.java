@@ -138,6 +138,9 @@ public class ImportTemplateBeanDefinitionParser implements BeanDefinitionParser 
     private static class MappingBeanDefinitionVisitor extends BeanDefinitionVisitor {
         private Map<String, String> replacements;
 
+        private String prefix = "${";
+        private String suffix = "}";
+
         private MappingBeanDefinitionVisitor(Map<String, String> replacements) {
             this.replacements = replacements;
         }
@@ -146,7 +149,7 @@ public class ImportTemplateBeanDefinitionParser implements BeanDefinitionParser 
         protected String resolveStringValue(String s) {
 
             for (Map.Entry<String, String> replacement : replacements.entrySet()) {
-                s = s.replace(replacement.getKey(), replacement.getValue());
+                s = s.replace(prefix + replacement.getKey() + suffix, replacement.getValue());
             }
             return s;
 

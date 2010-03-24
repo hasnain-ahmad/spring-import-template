@@ -26,10 +26,29 @@ package be.hikage.springtemplate;
 public class SimpleBean {
 
     private String propertyValue;
+    private String externalizedPropertyValue;
     private String constructorValue;
+    private String externalizedConstructorValue;
 
-    public SimpleBean(String constructorValue) {
+    public String getConstructorValue() {
+        return constructorValue;
+    }
+
+    public void setConstructorValue(String constructorValue) {
         this.constructorValue = constructorValue;
+    }
+
+    public String getExternalizedConstructorValue() {
+        return externalizedConstructorValue;
+    }
+
+    public void setExternalizedConstructorValue(String externalizedConstructorValue) {
+        this.externalizedConstructorValue = externalizedConstructorValue;
+    }
+
+    public SimpleBean(String constructorValue, String externalized) {
+        this.constructorValue = constructorValue;
+        this.externalizedConstructorValue = externalized;
     }
 
     public String getPropertyValue() {
@@ -38,5 +57,13 @@ public class SimpleBean {
 
     public void setPropertyValue(String propertyValue) {
         this.propertyValue = propertyValue;
+    }
+
+    public String getExternalizedPropertyValue() {
+        return externalizedPropertyValue;
+    }
+
+    public void setExternalizedPropertyValue(String externalizedPropertyValue) {
+        this.externalizedPropertyValue = externalizedPropertyValue;
     }
 }

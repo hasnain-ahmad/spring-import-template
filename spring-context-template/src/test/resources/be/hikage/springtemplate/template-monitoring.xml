@@ -19,22 +19,24 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="simple-${env}" class="be.hikage.springtemplate.SimpleBean">
-        <constructor-arg value="constructorData.${env}"/>
-        <constructor-arg value="${${env}.constructorValue}"/>
-        <property name="propertyValue" value="propertyData.${env}"/>
-        <property name="externalizedPropertyValue" value="${${env}.propertyValue}"/>
-    </bean>
-    <bean name="container-${env}" class="be.hikage.springtemplate.ContainerBean">
-        <property name="bean" ref="simple-${env}"/>
-        <property name="innerAnonymous">
 
-            <bean name="illegalname" class="be.hikage.springtemplate.SimpleBean">
-                <constructor-arg value=""></constructor-arg>
-                <constructor-arg value=""></constructor-arg>
+    <bean name="scheduledTimeTask.${server}" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+        <property name="timerTask">
+            <bean class="be.hikage.springtemplate.MonitoringTimerTask">
+                <property name="url" value="http://${server}/ping"/>
             </bean>
+        </property>
 
+        <property name="delay" value="1000"/>
+        <property name="period" value="1000"/>
+    </bean>
+    <bean name="timer.${server}" class="org.springframework.scheduling.timer.TimerFactoryBean">
+        <property name="scheduledTimerTasks">
+            <list>
+                <ref bean="scheduledTimeTask.${server}"/>
+            </list>
         </property>
     </bean>
+
 
 </beans>
