@@ -16,24 +16,26 @@
 
 package be.hikage.springtemplate;
 
+import java.util.TimerTask;
+
 /**
  * Created by IntelliJ IDEA.
  * User: hikage
  * Date: 23 mars 2010
- * Time: 12:31:48
+ * Time: 21:14:54
  * To change this template use File | Settings | File Templates.
  */
-public class ContainerBean {
+public class MonitoringTimerTask extends TimerTask {
 
-    private SimpleBean bean;
+    private String url;
 
-    public void setInnerAnonymous(Object innerAnonymous) {
-        this.innerAnonymous = innerAnonymous;
+    @Override
+    public void run() {
+
+        System.out.println("Ping " + url);
     }
 
-    private Object innerAnonymous;
-
-    public void setBean(SimpleBean bean) {
-        this.bean = bean;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

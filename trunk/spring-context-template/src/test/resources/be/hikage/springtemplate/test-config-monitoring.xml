@@ -21,13 +21,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.hikage.be/schema/import-template http://www.hikage.be/schema/import-template/import-template.xsd">
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:be/hikage/springtemplate/test-config-good.properties"/>
-    </bean>
 
+    <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
+        <hikage:replacement pattern="server" substitution="localhost"/>
+    </hikage:import-template>
 
-    <hikage:import-template location="classpath:be/hikage/springtemplate/template-good.xml">
-        <hikage:replacement pattern="env" substitution="dev"/>
+    <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
+        <hikage:replacement pattern="server" substitution="hikage.be"/>
+    </hikage:import-template>
+
+    <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
+        <hikage:replacement pattern="server" substitution="google.com"/>
     </hikage:import-template>
 
 

@@ -21,6 +21,7 @@
 
     <bean name="illegalname" class="be.hikage.springtemplate.SimpleBean">
         <constructor-arg value=""></constructor-arg>
+        <constructor-arg value=""></constructor-arg>
     </bean>
 
 
