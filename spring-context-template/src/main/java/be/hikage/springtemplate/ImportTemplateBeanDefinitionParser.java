@@ -51,17 +51,17 @@ public class ImportTemplateBeanDefinitionParser implements BeanDefinitionParser 
     /**
      * Attribute that contains the pattern to replace
      */
-    private static final String PATTERN_ATTRIBUTE = "pattern";
+    private static final String PATTERN_ATTRIBUTE = "name";
 
     /**
      * Attribute that contains the substitution
      */
-    private static final String SUBSTITUTION_ATTRIBUTE = "substitution";
+    private static final String SUBSTITUTION_ATTRIBUTE = "value";
 
     /**
      * Element name for the nested replacement element
      */
-    private static final String REPLACEMENT_TAG = "replacement";
+    private static final String REPLACEMENT_TAG = "variable";
 
 
     public BeanDefinition parse(Element element, ParserContext parserContext) {

@@ -23,15 +23,15 @@
 
 
     <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
-        <hikage:replacement pattern="server" substitution="localhost"/>
+        <hikage:variable name="server" value="localhost"/>
     </hikage:import-template>
 
     <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
-        <hikage:replacement pattern="server" substitution="hikage.be"/>
+        <hikage:variable name="server" value="hikage.be"/>
     </hikage:import-template>
 
     <hikage:import-template location="classpath:be/hikage/springtemplate/template-monitoring.xml">
-        <hikage:replacement pattern="server" substitution="google.com"/>
+        <hikage:variable name="server" value="google.com"/>
     </hikage:import-template>
 
 
