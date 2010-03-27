@@ -15,16 +15,11 @@
   ~ limitations under the License.
   -->
 
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:hikage="http://www.hikage.be/schema/import-template"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.hikage.be/schema/import-template http://www.hikage.be/schema/import-template/import-template.xsd">
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-context-template.iml" filepath="$PROJECT_DIR$/spring-context-template.iml" />
+    </modules>
+  </component>
+</project>
 
-
-    <hikage:import-template location="classpath:be/hikage/springtemplate/template-illegalname.xml">
-        <hikage:variable name="env" value="dev"/>
-    </hikage:import-template>
-
-
-</beans>

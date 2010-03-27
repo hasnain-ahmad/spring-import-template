@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2002-2008 the original author or authors.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~         http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project version="4">
+  <component name="CustomBeanRegistry">
+    <option name="map">
+      <map>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template-good.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;env&quot; substitution=&quot;dev&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="simple-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.SimpleBean" />
+                <option name="constructorArgumentCount" value="2" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="container-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.ContainerBean" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template-good.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;{env}&quot; substitution=&quot;dev&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="simple-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.SimpleBean" />
+                <option name="constructorArgumentCount" value="1" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="container-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.ContainerBean" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template-monitoring.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;server&quot; substitution=&quot;google.com&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="timer.google.com" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.TimerFactoryBean" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="scheduledTimeTask.google.com" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.ScheduledTimerTask" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template-monitoring.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;server&quot; substitution=&quot;hikage.be&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="scheduledTimeTask.hikage.be" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.ScheduledTimerTask" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="timer.hikage.be" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.TimerFactoryBean" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template-monitoring.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;server&quot; substitution=&quot;localhost&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="timer.localhost" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.TimerFactoryBean" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="scheduledTimeTask.localhost" />
+                <option name="beanClassName" value="org.springframework.scheduling.timer.ScheduledTimerTask" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;{env}&quot; substitution=&quot;dev&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="bean-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.Bean" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="bean2-dev" />
+                <option name="beanClassName" value="be.hikage.springtemplate.Bean2" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;hikage:import-template xmlns:hikage=&quot;http://www.hikage.be/schema/import-template&quot; location=&quot;classpath:be/hikage/springtemplate/template.xml&quot;&gt;&#10;  &lt;hikage:replacement pattern=&quot;{env}&quot; substitution=&quot;test&quot; /&gt;&#10;&lt;/hikage:import-template&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="test-test" />
+                <option name="beanClassName" value="java.lang.String" />
+                <option name="constructorArgumentCount" value="1" />
+              </CustomBeanInfo>
+              <CustomBeanInfo>
+                <option name="beanName" value="test2-test" />
+                <option name="beanClassName" value="java.lang.String" />
+                <option name="constructorArgumentCount" value="1" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+

@@ -27,7 +27,7 @@
 
 
     <hikage:import-template location="classpath:be/hikage/springtemplate/template-good.xml">
-        <hikage:replacement pattern="env" substitution="dev"/>
+        <hikage:variable name="env" value="dev"/>
     </hikage:import-template>
 
 

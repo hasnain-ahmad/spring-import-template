@@ -36,32 +36,32 @@
         </xsd:annotation>
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="replacement" minOccurs="1" maxOccurs="unbounded">
+                <xsd:element name="variable" minOccurs="1" maxOccurs="unbounded">
                     <xsd:annotation>
                         <xsd:documentation>
                             <![CDATA[
 
-        Specify a replacement to process in the template ressource
+        Specify a variable to process in the template ressource
                     ]]>
                         </xsd:documentation>
                     </xsd:annotation>
                     <xsd:complexType>
-                        <xsd:attribute name="pattern">
+                        <xsd:attribute name="name">
                             <xsd:annotation>
                                 <xsd:documentation>
                                     <![CDATA[
-The pattern to be replaced
+The variable to be replaced
                 ]]>
                                 </xsd:documentation>
                             </xsd:annotation>
 
 
                         </xsd:attribute>
-                        <xsd:attribute name="substitution">
+                        <xsd:attribute name="value">
                             <xsd:annotation>
                                 <xsd:documentation>
                                     <![CDATA[
-    The replacement string for the pattern
+    The replacement string for the variable
                  ]]>
                                 </xsd:documentation>
                             </xsd:annotation>
