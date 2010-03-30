@@ -64,7 +64,7 @@ To import template, you must use the dedicated namespace
 	<hikage:import-template location="classpath:be/hikage/springtemplate/template-good.xml">
 	
 		<!-- Replace variable ${env} by dev -->
-		<hikage:replacement pattern="env" substitution="dev"/>
+		<hikage:variable name="env" value="dev"/>
 	</hikage:import-template>
 </beans>
 }}}
