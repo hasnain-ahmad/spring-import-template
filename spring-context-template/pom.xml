@@ -111,10 +111,10 @@
             </plugin>
             <plugin>
                 <groupId>org.riedelcastro</groupId>
-                <artifactId>maven-gcupload-plugin</artifactId>
-                <version>1.0</version>
+                <artifactId>gcupload-maven-plugin</artifactId>
+                <version>0.9</version>
                 <configuration>
-                    <projectName>{your googlecode project id}</projectName>
+                    <projectName>spring-import-template</projectName>
                     <uploads>
                         <upload>
                             <extensions>jar</extensions>
@@ -143,12 +143,7 @@
         </repository>
     </distributionManagement>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repository.riedelcastro.org</id>
-            <url>http://repository.riedelcastro.org</url>
-        </pluginRepository>
-    </pluginRepositories>
+    
 
 
 </project>
