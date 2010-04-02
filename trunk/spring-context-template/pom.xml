@@ -98,7 +98,7 @@
                 <configuration>
                     <tagBase>https://spring-import-template.googlecode.com/svn/tags</tagBase>
                     <releaseProfiles>release</releaseProfiles>
-                    <goals>deploy assembly:assembly gcupload:gcupload</goals>
+                    <goals>deploy gcupload:gcupload</goals>
                 </configuration>
 
             </plugin>
