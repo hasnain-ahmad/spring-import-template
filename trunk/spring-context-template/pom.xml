@@ -20,7 +20,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>spring-context-template</groupId>
+    <groupId>be.hikage</groupId>
     <artifactId>spring-context-template</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -110,7 +110,22 @@
             </plugin>
 
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.jvnet.wagon-svn</groupId>
+                <artifactId>wagon-svn</artifactId>
+                <version>1.8</version>
+            </extension>
+        </extensions>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>googlecode</id>
+            <url>svn:https://spring-import-template.googlecode.com/svn/repo</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
