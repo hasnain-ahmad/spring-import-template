@@ -136,12 +136,6 @@
         </extensions>
     </build>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repository.riedelcastro.org</id>
-            <url>http://repository.riedelcastro.org</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <distributionManagement>
         <repository>
